@@ -1,0 +1,12 @@
+#nav {
+    background-color: rgb(255, 58, 58);
+}
+#nav div{
+    text-align: center;
+    padding: 8px;
+    display: inline-block;
+}
+#emptySpace {
+    max-width: relative;
+    background-color: transparent;
+}
