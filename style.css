@@ -1,12 +1,30 @@
-#nav {
-    background-color: rgb(255, 58, 58);
+body {
+    margin: 0px;
 }
-#nav div{
-    text-align: center;
-    padding: 8px;
-    display: inline-block;
+.nav {
+    background-color: rgb(255, 86, 86);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
-#emptySpace {
-    max-width: relative;
-    background-color: transparent;
+.nav-logo {
+    color: white;
+    padding-left: 30px;
+}
+.nav-links-div {
+    padding-right: 10px;
+    display: flex;
+    flex-wrap: wrap;
+}
+.links {
+    padding: 5px 15px 5px 15px;
+    margin: 0px 5px 0px 5px;
+    color: white;
+    text-decoration: none;
+    transition: background-color 0.3s;
+    cursor: pointer;
+}
+.links:hover {
+    background-color: rgba(0, 0, 0, 0.381);
+    border-radius: 5px; 
 }
