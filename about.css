@@ -1,0 +1,33 @@
+body {
+    margin: 0px;
+}
+header {
+    font-family: 'Merriweather Sans', sans-serif;
+}
+.nav {
+    background-color: rgb(255, 86, 86);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.nav-logo {
+    color: white;
+    margin-left: 40px;
+}
+.nav-links-div {
+    margin-right: 30px;
+    display: flex;
+    flex-wrap: wrap;
+}
+.links {
+    padding: 5px 10px 5px 10px;
+    margin: 0px 5px 0px 5px;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px; 
+    transition: background-color 0.3s;
+    cursor: pointer;
+}
+.links:hover {
+    background-color: rgba(0, 0, 0, 0.381);
+}
