@@ -3,24 +3,86 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Rate Our Website</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f9;
+            color: #333;
+            margin: 0;
+            padding: 0;
+            text-align: center;
+        }
+        h1 {
+            margin-top: 20px;
+            color: #444;
+        }
+        .rating-container {
+            margin: 20px auto;
+            padding: 20px;
+            border: 1px solid #ccc;
+            border-radius: 8px;
+            background-color: #fff;
+            width: 400px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        .stars {
+            display: flex;
+            justify-content: center;
+            margin: 10px 0;
+        }
+        .stars input {
+            display: none;
+        }
+        .stars label {
+            font-size: 24px;
+            color: #ccc;
+            cursor: pointer;
+        }
+        .stars input:checked ~ label {
+            color: #ffb400;
+        }
+        .stars label:hover,
+        .stars label:hover ~ label {
+            color: #ffb400;
+        }
+        textarea {
+            width: 90%;
+            margin: 10px 0;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            resize: none;
+        }
+        button {
+            background-color: #007bff;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #0056b3;
+        }
+    </style>
 </head>
 <body>
-    <header>
-        <div class="nav">
-            <div>
-                <h2 class="nav-logo">Famous Inventors</h2>
-            </div> 
-            <div class="nav-links-div">
+    <h1>Rate Our Website</h1>
 
-                <a class="links" href="#">Home</a>
-                <a class="links" href="about.html">About</a>
-                <a class="links" href="#">Team Members</a>
-                <a class="links" href="rating.html">Rating</a>
-            </div>
+    <div class="rating-container">
+        <p>We value your feedback! Please rate our website:</p>
+        <div class="stars">
+            <input type="radio" name="rating" id="star1"><label for="star1">★</label>
+            <input type="radio" name="rating" id="star2"><label for="star2">★</label>
+            <input type="radio" name="rating" id="star3"><label for="star3">★</label>
+            <input type="radio" name="rating" id="star4"><label for="star4">★</label>
+            <input type="radio" name="rating" id="star5"><label for="star5">★</label>
         </div>
-        <p>Rate Us</p>
-    </header>
-    
+        <textarea rows="4" placeholder="Leave your comments here..."></textarea>
+        <br>
+        <button>Submit Feedback</button>
+    </div>
 </body>
 </html>
+
