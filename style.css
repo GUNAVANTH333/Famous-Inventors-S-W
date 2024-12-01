@@ -9,6 +9,12 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    position: fixed;
+    width: 100%;
+    z-index: 1;
+}
+.body {
+    padding-top: 70px;
 }
 .nav-logo {
     color: white;
@@ -32,7 +38,7 @@ header {
     background-color: rgba(0, 0, 0, 0.381);
 }
 .main-heading {
-    height: 500px;
+    height: 600px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -53,18 +59,18 @@ header {
     text-shadow: 0px 0px 10px rgba(255, 255, 255, 0.5);
 }
 #body-content {
+    margin-top: 30px;
     display: grid;
     grid-template-columns: 1fr 1fr;
-    gap: -10px;
 }
 .inventors {
-    margin: 30px;
+    margin: 20px;
     font-family: Arial, sans-serif;
     color: black;
     display: flex;
     text-decoration: none;
     align-items: center;
-    border: 2px solid rgb(255, 86, 86);
+    border: 2px solid rgb(132, 0, 0);
     transition: transform 0.3s ease;
 }
 .inventors-image {
@@ -79,7 +85,7 @@ header {
 }
 .inventors-info h2 {
     font-size: 2rem;
-    color: rgb(255, 0, 0);
+    color: rgb(0, 0, 0);
     font-weight: bold;
 }
 .inventors:hover .inventors-image {
@@ -88,3 +94,6 @@ header {
 /* .inventors:hover {
     transform: scale(1.05);
 } */
+.inventors:hover h2 {
+    color: #ab2328;
+}
