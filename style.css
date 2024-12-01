@@ -5,7 +5,7 @@ header {
     font-family: 'Merriweather Sans', sans-serif;
 }
 .nav {
-    background-color: rgb(255, 86, 86);
+    background-color: rgb(227, 0, 0);
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -65,11 +65,26 @@ header {
     text-decoration: none;
     align-items: center;
     border: 2px solid rgb(255, 86, 86);
+    transition: transform 0.3s ease;
 }
 .inventors-image {
-    height: 300px;
+    height: 350px;
     padding: 30px;
+    transition: transform 0.3s ease;
+    object-fit: cover;
 }
 .inventors-info {
     padding: 30px;
+    font-size: 1rem;
 }
+.inventors-info h2 {
+    font-size: 2rem;
+    color: rgb(255, 0, 0);
+    font-weight: bold;
+}
+.inventors:hover .inventors-image {
+    transform: scale(1.05);
+}
+/* .inventors:hover {
+    transform: scale(1.05);
+} */
