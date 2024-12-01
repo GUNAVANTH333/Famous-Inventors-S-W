@@ -52,3 +52,24 @@ header {
     padding: 20px;
     text-shadow: 0px 0px 10px rgba(255, 255, 255, 0.5);
 }
+#body-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: -10px;
+}
+.inventors {
+    margin: 30px;
+    font-family: Arial, sans-serif;
+    color: black;
+    display: flex;
+    text-decoration: none;
+    align-items: center;
+    border: 2px solid rgb(255, 86, 86);
+}
+.inventors-image {
+    height: 300px;
+    padding: 30px;
+}
+.inventors-info {
+    padding: 30px;
+}
