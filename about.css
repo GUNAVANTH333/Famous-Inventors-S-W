@@ -8,10 +8,14 @@ header {
     font-family: 'Merriweather Sans', sans-serif;
 }
 .nav {
-    background-color: rgb(255, 86, 86);
+    background-color: rgb(227, 0, 0);
     display: flex;
     justify-content: space-between;
     align-items: center;
+    width: 100%;
+}
+.body {
+    padding-top: 70px;
 }
 .nav-logo {
     color: white;
@@ -51,17 +55,17 @@ body {
     margin: 0 auto;
 }
 
-h1 {
+/* h1 {
     font-size: 2.5;
     color: #000000;
     margin-bottom: 10px;
-}
+} */
 
-h2 {
+/* h2 {
     font-size: 1.5;
     color: #000000;
     margin-bottom: 40px;
-}
+} */
 
 .team {
     display: flex;
