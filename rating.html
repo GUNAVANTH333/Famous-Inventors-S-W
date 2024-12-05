@@ -151,11 +151,16 @@
     <h1>Rate Our Website</h1>
 
     <div class="rating-container">
-        <p>We value your feedback! Please rate our website:</p>
+        <p>We value your feedback!</p>
         <form action="https://formspree.io/f/xyzyopvn" method="POST">
             <div class="name-input">
             <label for="name">Your Name:</label>
-            <input type="text" id="name" name="name" placeholder="Enter your name" required>
+            <input type="text" id="name" name="name" placeholder="Enter your name" required><br>
+            <p> </p>
+            <div class="email-input">
+            <label for="mail">Your E-MAIL:</label>
+            <input type="email" id="mail" name="mail" placeholder="Enter your E-MAIL" required>
+        <p>How Would you rate your Overall experience ?</p>
         </div>
             <div class="stars">
                 <input type="radio" name="rating" id="star1" value="1"><label for="star1">★</label>
@@ -164,6 +169,7 @@
                 <input type="radio" name="rating" id="star4" value="4"><label for="star4">★</label>
                 <input type="radio" name="rating" id="star5" value="5"><label for="star5">★</label>
             </div>
+            <p>Kindly Take a moment  tell us what you think. </p>
             <textarea name="feedback" rows="4" placeholder="Leave your comments here..."></textarea>
             <br>
             <button type="submit">Submit Feedback</button>
@@ -171,5 +177,6 @@
     </div>
 </body>
 </html>
+
 
 
