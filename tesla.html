@@ -4,39 +4,50 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Nikola Tesla - The Visionary Inventor</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather+Sans:ital,wght@0,300..800;1,300..800&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
     <style>
         body {
-            font-family: Arial, sans-serif;
             margin: 0;
-            padding: 0;
             background-color: #f4f4f9;
             color: #333;
         }
         header {
+            font-family: 'Merriweather Sans', sans-serif;
+        }
+        .nav {
             background-color: rgb(227, 0, 0);
-            color: white;
             display: flex;
             justify-content: space-between;
             align-items: center;
-            padding: 1rem 2rem;
+            position: fixed;
+            width: 100%;
+            z-index: 1;
         }
         .nav-logo {
-            font-size: 1.5rem;
-            font-weight: bold;
+            color: white;
+            margin-left: 40px;
         }
         .nav-links-div {
+            margin-right: 30px;
             display: flex;
-            gap: 1rem;
+            flex-wrap: wrap;
         }
         .links {
+            padding: 5px 10px 5px 10px;
+            margin: 0px 5px 0px 5px;
             color: white;
             text-decoration: none;
-            padding: 0.5rem 1rem;
-            border-radius: 5px;
+            border-radius: 5px; 
             transition: background-color 0.3s;
+            cursor: pointer;
         }
         .links:hover {
-            background-color: rgba(0, 0, 0, 0.3);
+            background-color: rgba(0, 0, 0, 0.381);
         }
         .container {
             display: flex;
@@ -72,10 +83,6 @@
             border-radius: 8px;
             box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
         }
-        h2 {
-            color: #003366;
-            margin-bottom: 0.5rem;
-        }
         .left-inventions h3 {
             color: #003366;
         }
@@ -94,19 +101,27 @@
         .back-link:hover {
             text-decoration: underline;
         }
+        .body {
+            padding-top: 70px;
+        }
     </style>
 </head>
 <body>
     <header>
-        <div class="nav-logo">Famous Inventors</div>
-        <div class="nav-links-div">
-            <a class="links" href="index.html">Home</a>
-            <a class="links" href="about.html">About</a>
-            <a class="links" href="#">Team Members</a>
-            <a class="links" href="rating.html">Rating</a>
+        <div class="nav">
+            <div>
+                <h2 class="nav-logo">Famous Inventors</h2>
+            </div> 
+            <div class="nav-links-div">
+
+                <a class="links" href="index.html">Home</a>
+                <a class="links" href="about.html">About</a>
+                <a class="links" href="#">Team Members</a>
+                <a class="links" href="rating.html">Rating</a>
+            </div>
         </div>
     </header>
-    <main>
+    <div class="body">
         <div class="container">
             <div class="left-section">
                 <div class="image-container">
@@ -145,7 +160,7 @@
             </div>
         </div>
         <a href="index.html" class="back-link">← Back to Home</a>
-    </main>
+    </div>
 </body>
 </html>
 
