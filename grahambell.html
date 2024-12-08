@@ -104,6 +104,23 @@
         .body {
             padding-top: 70px;
         }
+        .images-bottom {
+            display: flex;
+            justify-content: flex-end;
+            gap: 10px;
+            margin-top: auto;
+        }
+        .images-bottom img {
+            width: 250px; 
+            height: 250px;
+            border-radius: 5px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+            transition: transform 0.3s;
+        }
+        .images-bottom img:hover {
+            transform: scale(1.1);
+        }
+
     </style>
 </head>
 <body>
@@ -149,6 +166,14 @@
                         <strong>Telephone:</strong> Alexander Graham Bell along with Notable people included  Antonio Meucci, Philipp Reis, Elisha Gray. Invented the concept of telephone. Which they thought communication can be made easy.
                     </p>
                 </div>
+                    <div class="images-container">
+        <h3>Related Images</h3>
+        <div class="images-bottom">
+            <img src="telephone.jpg" alt="Image 1">
+            <img src="telephone1.jpg" alt="Image 2">
+            <img src="telephone3.jpeg"alt="Image 3">
+        </div>
+    </div>
             </div>
         </div>
         <a href="index.html" class="back-link">← Back to Home</a>
