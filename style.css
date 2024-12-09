@@ -58,10 +58,11 @@ header {
     padding: 20px;
     text-shadow: 0px 0px 10px rgba(255, 255, 255, 0.5);
 }
-#body-content {
+.body-content {
     margin-top: 30px;
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr;
+    gap: 20px;
 }
 .inventors {
     margin: 20px;
@@ -72,6 +73,8 @@ header {
     align-items: center;
     border: 2px solid rgb(132, 0, 0);
     transition: transform 0.3s ease;
+    display: flex;
+    justify-content: space-between;
 }
 .inventors-image {
     width: 250px;
@@ -82,10 +85,11 @@ header {
 }
 .inventors-info {
     padding: 30px;
-    font-size: 1rem;
+    font-size: 1.1rem;
 }
 .inventors-info h2 {
-    font-size: 2rem;
+    text-align: center;
+    font-size: 3.3rem;
     color: rgb(0, 0, 0);
     font-weight: bold;
 }
