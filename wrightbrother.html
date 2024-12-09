@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wright Brothers - Pioneers of Aviation</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
+        rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Merriweather+Sans:ital,wght@0,300..800;1,300..800&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
+        rel="stylesheet">
+    <style>
+        body {
+            margin: 0;
+            background-color: #f4f4f9;
+            color: #333;
+        }
+
+        header {
+            font-family: 'Merriweather Sans', sans-serif;
+        }
+
+        .nav {
+            background-color: rgb(227, 0, 0);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            position: fixed;
+            width: 100%;
+            z-index: 1;
+        }
+
+        .nav-logo {
+            color: white;
+            margin-left: 40px;
+        }
+
+        .nav-links-div {
+            margin-right: 30px;
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+        .links {
+            padding: 5px 10px 5px 10px;
+            margin: 0px 5px 0px 5px;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+            cursor: pointer;
+        }
+
+        .links:hover {
+            background-color: rgba(0, 0, 0, 0.381);
+        }
+
+        .container {
+            display: flex;
+            flex-wrap: wrap;
+            max-width: 1200px;
+            margin: 2rem auto;
+            padding: 1rem;
+            gap: 1rem;
+        }
+
+        .left-section {
+            flex: 1;
+            min-width: 300px;
+            display: flex;
+            flex-direction: column;
+            gap: 1rem;
+        }
+
+        .right-section {
+            flex: 2;
+            min-width: 400px;
+            display: flex;
+            flex-direction: column;
+            gap: 1rem;
+        }
+
+        .image-container img {
+            width: 100%;
+            max-width: 300px;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+        }
+
+        .about-div,
+        .inventions-div,
+        .left-inventions {
+            background: white;
+            padding: 1rem;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        .left-inventions h3 {
+            color: #003366;
+        }
+
+        ul {
+            margin: 0;
+            padding-left: 1.5rem;
+        }
+
+        .back-link {
+            display: block;
+            margin-top: 2rem;
+            text-align: center;
+            text-decoration: none;
+            color: #00509e;
+            font-weight: bold;
+        }
+
+        .back-link:hover {
+            text-decoration: underline;
+        }
+
+        .body {
+            padding-top: 70px;
+        }
+
+        .images-bottom {
+            display: flex;
+            justify-content: flex-end;
+            gap: 10px;
+            margin-top: auto;
+        }
+
+        .images-bottom img {
+            width: 250px;
+            height: 250px;
+            border-radius: 5px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+            transition: transform 0.3s;
+        }
+
+        .images-bottom img:hover {
+            transform: scale(1.1);
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="nav">
+            <div>
+                <h2 class="nav-logo">Famous Scientists</h2>
+            </div>
+            <div class="nav-links-div">
+                <a class="links" href="index.html">Home</a>
+                <a class="links" href="about.html">About</a>
+                <a class="links" href="#">Team Members</a>
+                <a class="links" href="rating.html">Rating</a>
+            </div>
+        </div>
+    </header>
+    <div class="body">
+        <div class="container">
+            <div class="left-section">
+                <div class="image-container">
+                    <img src="Photos/bros.png" alt="Wright Brothers">
+                </div>
+                <div class="left-inventions">
+                    <h3>Key Discoveries</h3>
+                    <ul>
+                        <li>First Controlled, Powered, and Sustained Flight</li>
+                        <li>Three-Axis Control System</li>
+                    </ul>
+                    <h4>First Flight</h4>
+                    <p>
+                        On December 17, 1903, the Wright Brothers achieved the first powered flight with the Wright
+                        Flyer, covering 120 feet in 12 seconds.
+                    </p>
+                </div>
+            </div>
+            <div class="right-section">
+                <div class="about-div">
+                    <h2>About the Wright Brothers</h2>
+                    <p>
+                        Orville and Wilbur Wright were American inventors and aviation pioneers. They revolutionized
+                        transportation by achieving the first
+                        powered, controlled, and sustained flight.
+                    </p>
+                </div>
+                <div class="inventions-div">
+                    <h2>Details About Their Work</h2>
+                    <p>
+                        <strong>Three-Axis Control System:</strong> This innovative control mechanism allowed pilots to
+                        steer and maintain stability during flight,
+                        laying the foundation for modern aviation.
+                    </p>
+                </div>
+                <div class="images-container">
+                    <h3>Related Images</h3>
+                    <div class="images-bottom">
+                        <img src="Photos/first-flight.jpg" alt="First Flight">
+                        <img src="Photos/wright-flyer.jpg" alt="Wright Flyer">
+                        <img src="Photos/aviation-history.jpg" alt="Early Aviation Innovations">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <a href="index.html" class="back-link">← Back to Home</a>
+    </div>
+</body>
+
+</html>
