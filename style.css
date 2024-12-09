@@ -102,3 +102,62 @@ header {
 .inventors:hover h2 {
     color: #ab2328;
 }
+@media (max-width: 480px) {
+    .inventors {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .inventors-info h2 {
+        font-size: 1.8rem;
+    }
+
+    .inventors-info p {
+        font-size: 0.9rem;
+    }
+
+    .inventors-image {
+        display: none;
+    }
+}
+@media (max-width: 1060px) {
+    .main-heading {
+        height: 400px;
+    }
+
+    .heading {
+        width: 100%;
+        font-size: large;
+        padding: 15px;
+    }
+
+    .body-content {
+        grid-template-columns: 1fr;
+        gap: 15px;
+    }
+
+    .inventors {
+        flex-direction: row;
+        align-items: center;
+        margin: 10px;
+        padding: 10px;
+    }
+
+    .inventors-image {
+        width: 150px;
+        height: auto;
+    }
+
+    .inventors-info {
+        padding: 10px;
+        font-size: 1rem;
+    }
+
+    .inventors-info h2 {
+        font-size: 2rem;
+    }
+
+    .inventors div:nth-child(3) .inventors-image {
+        display: none;
+    }
+}
