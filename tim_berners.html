@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tim Berners-Lee - The Inventor of the World Wide Web</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
+        rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Merriweather+Sans:ital,wght@0,300..800;1,300..800&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
+        rel="stylesheet">
+    <style>
+        body {
+            margin: 0;
+            background-color: #f4f4f9;
+            color: #333;
+        }
+
+        header {
+            font-family: 'Merriweather Sans', sans-serif;
+        }
+
+        .nav {
+            background-color: rgb(227, 0, 0);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            position: fixed;
+            width: 100%;
+            z-index: 1;
+        }
+
+        .nav-logo {
+            color: white;
+            margin-left: 40px;
+        }
+
+        .nav-links-div {
+            margin-right: 30px;
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+        .links {
+            padding: 5px 10px 5px 10px;
+            margin: 0px 5px 0px 5px;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+            cursor: pointer;
+        }
+
+        .links:hover {
+            background-color: rgba(0, 0, 0, 0.381);
+        }
+
+        .container {
+            display: flex;
+            flex-wrap: wrap;
+            max-width: 1200px;
+            margin: 2rem auto;
+            padding: 1rem;
+            gap: 1rem;
+        }
+
+        .left-section {
+            flex: 1;
+            min-width: 300px;
+            display: flex;
+            flex-direction: column;
+            gap: 1rem;
+        }
+
+        .right-section {
+            flex: 2;
+            min-width: 400px;
+            display: flex;
+            flex-direction: column;
+            gap: 1rem;
+        }
+
+        .image-container img {
+            width: 100%;
+            max-width: 300px;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+        }
+
+        .about-div,
+        .inventions-div,
+        .left-inventions {
+            background: white;
+            padding: 1rem;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        .left-inventions h3 {
+            color: #003366;
+        }
+
+        ul {
+            margin: 0;
+            padding-left: 1.5rem;
+        }
+
+        .back-link {
+            display: block;
+            margin-top: 2rem;
+            text-align: center;
+            text-decoration: none;
+            color: #00509e;
+            font-weight: bold;
+        }
+
+        .back-link:hover {
+            text-decoration: underline;
+        }
+
+        .body {
+            padding-top: 70px;
+        }
+
+        .images-bottom {
+            display: flex;
+            justify-content: flex-end;
+            gap: 10px;
+            margin-top: auto;
+        }
+
+        .images-bottom img {
+            width: 250px;
+            height: 250px;
+            border-radius: 5px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+            transition: transform 0.3s;
+        }
+
+        .images-bottom img:hover {
+            transform: scale(1.1);
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="nav">
+            <div>
+                <h2 class="nav-logo">Famous Inventors</h2>
+            </div>
+            <div class="nav-links-div">
+                <a class="links" href="index.html">Home</a>
+                <a class="links" href="about.html">About</a>
+                <a class="links" href="#">Team Members</a>
+                <a class="links" href="rating.html">Rating</a>
+            </div>
+        </div>
+    </header>
+    <div class="body">
+        <div class="container">
+            <div class="left-section">
+                <div class="image-container">
+                    <img src="Photos/Tim Berners-Lee.jpg" alt="Tim Berners-Lee">
+                </div>
+                <div class="left-inventions">
+                    <h3>Key Contributions</h3>
+                    <ul>
+                        <li>Invention of the World Wide Web</li>
+                        <li>Development of HTTP and HTML</li>
+                        <li>Founder of the World Wide Web Consortium (W3C)</li>
+                    </ul>
+                    <h4>World Wide Web</h4>
+                    <p>
+                        Tim Berners-Lee invented the World Wide Web in 1989, providing the foundation for the internet as we know it.
+                    </p>
+                    <h4>HTTP and HTML</h4>
+                    <p>
+                        He developed the protocols and standards that made the web functional, including HTTP and HTML.
+                    </p>
+                </div>
+            </div>
+            <div class="right-section">
+                <div class="about-div">
+                    <h2>About Tim Berners-Lee</h2>
+                    <p>
+                        Tim Berners-Lee is an English computer scientist and inventor. He is best known as the creator of the World Wide Web, which revolutionized global information sharing and connectivity.
+                    </p>
+                </div>
+                <div class="inventions-div">
+                    <h2>Details About His Work</h2>
+                    <p>
+                        <strong>World Wide Web:</strong> Berners-Lee introduced the first web browser, server, and the fundamental technologies for online browsing in 1990. His vision of an open web transformed communication and information access.
+                    </p>
+                    <p>
+                        As the founder of the World Wide Web Consortium (W3C), he has continued to champion the principles of accessibility and inclusivity on the web.
+                    </p>
+                </div>
+                <div class="images-container">
+                    <h3>Related Images</h3>
+                    <div class="images-bottom">
+                        <img src="Photos/tim1.jpg" alt="Tim Berners-Lee in his lab">
+                        <img src="Photos/tim3.jpg" alt="First Web Server">
+                        <img src="Photos/tim2.jpg" alt="Tim Berners-Lee speaking at a conference">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <a href="index.html" class="back-link">← Back to Home</a>
+    </div>
+</body>
+
+</html>
