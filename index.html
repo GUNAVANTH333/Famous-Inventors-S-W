@@ -17,13 +17,18 @@
         <div class="nav">
             <div>
                 <h2 class="nav-logo">Famous Inventors</h2>
-            </div> 
+            </div>
             <div class="nav-links-div">
-
-                <a class="links" href="#">Home</a>
-                <a class="links" href="about.html">About</a>
-                <a class="links" href="#">Team Members</a>
-                <a class="links" href="rating.html">Rating</a>
+                <div class="hamburger" onclick="toggleMenu()">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </div>
+                <div class="nav-links">
+                    <a class="links" href="index.html">Home</a>
+                    <a class="links" href="about.html">About</a>
+                    <a class="links" href="rating.html">Rating</a>
+                </div>
             </div>
         </div>
     </header>
@@ -378,5 +383,11 @@
                     <p>✉️famousinventors@company.com</p>
                 
     </footer>
+    <script>
+        function toggleMenu() {
+            const navLinks = document.querySelector('.nav-links');
+            navLinks.classList.toggle('show');
+        }
+    </script>
 </body>
 </html>
