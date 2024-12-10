@@ -135,8 +135,12 @@ body {
     border-radius: 10px;
     max-width: 300px;
     text-align: center;
+    transition: transform 0.3s ease-in-out;
     
     
+}
+.team-member:hover {
+    transform: translateY(-20px);
 }
 
 .team-member img {
