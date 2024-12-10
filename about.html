@@ -18,20 +18,25 @@
 </head>
 <body>
     <header>
-        <div class="nav">
-            <div>
-                <h2 class="nav-logo">Famous Inventors</h2>
-                
-            </div> 
-            <div class="nav-links-div">
-
-                <a class="links" href="index.html">Home</a>
-                <a class="links" href="about.html">About</a>
-                <a class="links" href="#">Team Members</a>
-                <a class="links" href="rating.html">Rating</a>
+        <header>
+            <div class="nav">
+                <div>
+                    <h2 class="nav-logo">Famous Inventors</h2>
+                </div>
+                <div class="nav-links-div">
+                    <div class="hamburger" onclick="toggleMenu()">
+                        <span class="bar"></span>
+                        <span class="bar"></span>
+                        <span class="bar"></span>
+                    </div>
+                    <div class="nav-links">
+                        <a class="links" href="index.html">Home</a>
+                        <a class="links" href="about.html">About</a>
+                        <a class="links" href="rating.html">Rating</a>
+                    </div>
+                </div>
             </div>
-        </div>
-    </header>
+        </header>
     <section>
         
     </section>
@@ -41,11 +46,11 @@
     <section class="team-section">
         <div class="container">
             <h1 style="color: rgb(214, 232, 232);">ABOUT US</h1>
-            <h2 style="color: rgb(214, 232, 232);">The People Behind the Progress</h2>
+            <h2 style="color: rgb(255, 255, 255);">The People Behind the Progress</h2>
             <div class="team">
                 
                 <div class="team-member">
-                    <img src="" alt="GUNAVANTH">
+                    <img src="Photos/Logo MadPanda.jpg" alt="GUNAVANTH">
                     <h3>CHILUKULA GUNAVANTH REDDY</h3>
                     <p class="role">FRONTEND</p>
                     <p class="description">Proficient in Python, HTML, CSS, and JavaScript, with a foundation in C++. Focused on developing interactive web experiences and enhancing functionality through clean, structured code.</p>
@@ -83,6 +88,12 @@
             </div>
         </div>
     </section>
+    <script>
+        function toggleMenu() {
+            const navLinks = document.querySelector('.nav-links');
+            navLinks.classList.toggle('show');
+        }
+    </script>
 </body>
 
 </html>

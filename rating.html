@@ -88,57 +88,107 @@
             margin: 0px;
         }
         header {
-            font-family: 'Merriweather Sans', sans-serif;
-        }
-        .nav {
-            background-color: rgb(227, 0, 0);
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            width: 100%;
-        }
-        .nav-logo {
-            color: white;
-            margin-left: 40px;
-        }
-        .nav-links-div {
-            margin-right: 30px;
-            display: flex;
-            flex-wrap: wrap;
-        }
-        .links {
-            padding: 5px 10px 5px 10px;
-            margin: 0px 5px 0px 5px;
-            color: white;
-            text-decoration: none;
-            border-radius: 5px; 
-            transition: background-color 0.3s;
-            cursor: pointer;
-        }
-        .links:hover {
-            background-color: rgba(0, 0, 0, 0.381);
-        }
-        .main-heading {
-            height: 500px;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            background-image: url(Background\ Greyscale\ FamousInventors.png);
-            background-color: rgba(0, 0, 0, 0.6);
-            background-blend-mode: overlay;
-            background-position: center;
-        }
-        .heading {
-            width: 900px;
-            color: white;
-            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-            font-weight: 800;
-            font-size: xx-large;
-            text-align: center;
-            margin: 20px;
-            padding: 20px;
-            text-shadow: 0px 0px 10px rgba(255, 255, 255, 0.5);
-        }
+    font-family: 'Merriweather Sans', sans-serif;
+}
+
+.nav {
+    background-color: rgb(227, 0, 0);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 5px 15px;
+    height: 60px;
+}
+
+
+.nav-logo {
+    color: white;
+    margin-left: 40px;
+    white-space: nowrap;
+    font-size: 1.8rem;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.nav-links-div {
+    display: flex;
+    align-items: center;
+    position: relative;
+    width: 100%;
+    margin-right: 50px;
+}
+
+.nav-links {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-left: auto;
+}
+
+.links {
+    padding: 5px 10px;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+    cursor: pointer;
+}
+
+.links:hover {
+    background-color: rgba(0, 0, 0, 0.381);
+}
+
+.hamburger {
+    display: none;
+    flex-direction: column;
+    gap: 5px;
+    cursor: pointer;
+    justify-content: center;
+    align-items: center;
+    margin-left: auto;
+}
+
+.hamburger .bar {
+    width: 25px;
+    height: 3px;
+    background-color: white;
+}
+
+@media (max-width: 768px) {
+    .nav-links {
+        display: none;
+        width: 100%;
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+        position: absolute;
+        top: 44px;
+        left: 0;
+        background-color: rgba(255, 0, 0, 0.526);
+        padding: 10px 20px;
+    }
+
+    .nav-links-div {
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+    }
+
+    .hamburger {
+        display: flex;
+    }
+
+    .nav-links.show {
+        display: flex;
+    }
+}
+
+@media (max-width: 480px) {
+    .nav-logo {
+        font-size: 1.5rem;
+    }
+}
     </style>
 </head>
 <body>
@@ -146,12 +196,18 @@
         <div class="nav">
             <div>
                 <h2 class="nav-logo">Famous Inventors</h2>
-            </div> 
+            </div>
             <div class="nav-links-div">
-                <a class="links" href="index.html">Home</a>
-                <a class="links" href="about.html">About</a>
-                <a class="links" href="#">Team Members</a>
-                <a class="links" href="rating.html">Rating</a>
+                <div class="hamburger" onclick="toggleMenu()">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </div>
+                <div class="nav-links">
+                    <a class="links" href="index.html">Home</a>
+                    <a class="links" href="about.html">About</a>
+                    <a class="links" href="rating.html">Rating</a>
+                </div>
             </div>
         </div>
     </header>
@@ -200,6 +256,10 @@
                 } 
             })
         });
+        function toggleMenu() {
+            const navLinks = document.querySelector('.nav-links');
+            navLinks.classList.toggle('show');
+        }
     </script>
 </body>
 </html>
